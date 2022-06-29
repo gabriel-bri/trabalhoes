@@ -1,13 +1,12 @@
-import { StyleSheet, View } from 'react-native';
-import TaskNAppointments from './src/components/TasksNAppointments';
-import Title from './src/components/Title';
+import { StyleSheet } from 'react-native';
+import { Stack } from '@react-native-material/core'
+import Menu from './src/components/Menu';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Title/>
-      <TaskNAppointments/>
-    </View>
+    <Stack style={styles.container}>
+      <Menu/>
+    </Stack>
   );
 }
 

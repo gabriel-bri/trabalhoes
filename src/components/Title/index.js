@@ -1,11 +1,9 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import styles from './style'
+import { Text, Stack } from "@react-native-material/core";
+import styles from './style';
 
 export default function Title() {
     return (
-    <View>
-        <Text style={styles.titleText}>QUANTO FALTA?</Text>
-    </View>   
+        <Text variant='h4' color='#ffffff'>QUANTO FALTA?</Text>
     )
 }

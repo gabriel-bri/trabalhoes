@@ -1,20 +1,15 @@
+import { ListItem, Stack } from "@react-native-material/core";
 import React from "react";
-import { View, FlatList, Text } from 'react-native';
+import { FlatList } from 'react-native';
 
-export default function TaskList(probs) {
+export default function TaskList(props) {
+
     return (
-        <View>
+        <Stack>
             <FlatList
-                data={probs.tasksList}
-                renderItem={
-                    ({task}) => {
-                        <View>
-                            <Text>{task.desc}</Text>
-                            <Text>{task.date}</Text>
-                        </View>
-                    }
-                }
+                data={props.tasksList}
+                renderItem={({item}) => <ListItem title={item.key}/>} 
             />
-        </View>
+        </Stack>
     )
 }

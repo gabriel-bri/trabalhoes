@@ -1,12 +1,12 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Text, Stack } from "@react-native-material/core";
 import Form from "./Form"
 
 export default function TaskNAppointments() {
     return(
-        <View>
-            <Text>tarefas/compromissos</Text>
+        <Stack>
+            <Text variant='h2'>tarefas/compromissos</Text>
             <Form/>
-        </View>
+        </Stack>
     )
 }

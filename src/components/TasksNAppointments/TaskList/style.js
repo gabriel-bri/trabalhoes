@@ -1,12 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    form: {
+    list: {
         backgroundColor: '#ffffff',
-        padding: 12,
+        padding: 15,
         borderRadius: 5,
-        margin: 12,
-    },
+    }
 })
 
 export default styles
